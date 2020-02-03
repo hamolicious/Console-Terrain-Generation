@@ -1,2 +1,2 @@
 # Console-Terrain-Generation
-Terrain generation using perlin noise in the console (&lt;strong>WINDOWS ONLY&lt;/strong>). Run in the console!
+Terrain generation using perlin noise in the console (<strong>WINDOWS ONLY</strong>). Run in the console!
