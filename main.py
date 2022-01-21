@@ -1,27 +1,20 @@
-from player_class import Player
+from time import sleep
 from os import system
-from renderer import *
-from world_handlers import *
+from world import World
 
 width = 150
-height = 40
+height = 60
 
-world = generate_world(width, height)
+world = World(width, height)
 
 print('Loading...')
-x, y, colors, = init_renderer(width, height)
-player = Player(x, y)
+world.pre_generate()
 
 clear = lambda : system('cls')
+system('color')
 
 clear()
-print('Press any key to start!')
-while True:
-	player.move(width, height)
-	player.update()
-
-	clear()
-	draw(width, height, player, world, colors)
+world.display()
 
 
 
